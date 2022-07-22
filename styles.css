@@ -1,0 +1,424 @@
+.row {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.col-xs-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    z-index: 2;
+    background-color: #9CB4CC;
+    border: 3px solid #748DA6;
+}
+
+.col-xs-2 {
+    background-color: #D3CEDF;
+    border: 3px solid #748DA6;
+    z-index: 2;
+    text-align: center;
+    font-size: 30px;
+    font-family: Britannic
+}
+
+.logo {
+
+    width: 100px;
+    height: 30px;
+}
+
+.col-xs-3 {
+    background-color: #D3CEDF;
+    border: 3px solid #748DA6;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.portada {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.resizedTextbox {
+    width: 300px;
+    height: 100px
+}
+
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+
+
+h1 {
+    font-family: fantasy;
+    font-size: x-large;
+    font-size: 40px;
+    color: rgb(228, 221, 231);
+    text-align: justify;
+    font-weight: bold;
+    margin: 5px;
+    width: 480px;
+
+}
+
+
+
+
+/*
+-----------texto <p>
+*/
+
+#p_pi {
+    text-align: justify;
+    margin: 10px;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #6a706e;
+}
+
+
+/*
+---------estilo barra de equipo---------------
+*/
+
+ul.acorh {
+    margin: 10px auto;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+ul.acorh li a {
+    display: block;
+    padding: 10px 10px 10px 20px;
+    background: #333;
+    color: #eee;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #666;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ul.acorh li ul {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    transition: .3s all ease-in;
+}
+
+ul.acorh li:hover ul {
+    max-height: 300px;
+    transition: .3s all ease-in;
+}
+
+ul.acorh li a:hover {
+    background: #666;
+    color: rgb(104, 91, 91);
+}
+
+/*---------------Barra de tareas-----------------------------------------------*/
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/*  codigo de la tabla */
+
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 16px;
+    margin: 55px;
+    width: 1000px;
+    text-align: center;
+    border-collapse: collapse;
+
+
+}
+
+th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+
+td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid transparent;
+}
+
+tr:hover td {
+    background: #d0dafd;
+    color: #339;
+}
+
+caption {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b9c9fe;
+}
+/**/
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+form#pago {
+    margin: auto;
+    background: Green;
+    color: white;
+    font-size: 12px;
+    padding: 30px;
+    width: 350px;
+    border: solid 10px LightSteelBlue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+form#pago fieldset {
+    border: none;
+
+}
+
+form#pago input {
+    font-size: 12px;
+    background: yellow;
+    border: solid 1px Green;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    float: right;
+    margin-right: 15px;
+    width: 200px;
+}
+form#pago ol li {
+    line-height: 25px;
+    list-style: none;
+    }
+    
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Ejemplo de HTML5">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <title>Opiniones</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+   
+</head>
+
+<body>
+    <!-- Cabecera -->
+
+    <header>
+        <img class="logo" src="Media/ejemplo-logotipo.jpg" />
+
+    </header>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="Equipo.html">Equipo</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li style="float:right"><a href="form.html">Registrarse</a></li>
+    </ul>
+
+    <div id="recursos2">
+        <form id="pago">
+            <fieldset>
+                <legend>Datos para sugerencias</legend>
+                <ol>
+                    <li>
+                        <label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text"
+                            placeholder="Escribe tu nombre completo">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="ejemplo@um.es">
+                    </li>
+                    <li>
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="Ej. +34668899999">
+                    </li>
+                    <li>
+                        <label for="pais">País</label>
+                        <input id="pais" name="pais" type="text">
+                    </li>
+                </ol>
+            </fieldset>
+         
+
+            <fieldset>
+                <button type="submit" value="Enviar" onclick="validar()">Peticion de sugerencia al numero ingresado</button>
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        function validar() {
+            var inputBox = document.getElementById('nombre');
+            var pattern = new RegExp('^[A-Z]+$', 'i');
+            var inputBox1 = document.getElementById('email');
+            var pattern1 = new RegExp('^[@]+$', 'i');
+
+            if (!pattern.test(inputBox.value)) {
+                window.alert("Solo se permite letras");
+            }
+            if (!inputBox1.value.includes(".com", 0)) {
+                window.alert("Debe contener .com");
+            }
+            if (!inputBox1.value.includes("@", 0)) {
+                window.alert("Debe contener @");
+            }
+
+            else{
+                window.alert("mensaje enviado")
+            }
+
+        }
+    </script>
+
+</html>
